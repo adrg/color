@@ -1,6 +1,6 @@
 all: build
 
-build: color.go help.go
+build: get_deps color.go help.go
 	go build .
 
 clean:
