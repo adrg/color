@@ -11,6 +11,8 @@ get_deps:
 
 install:
 	cp -f color /usr/local/bin/color
+	cp -f color.1 /usr/local/share/man/man1/color.1
 
 uninstall:
 	rm /usr/local/bin/color
+	rm /usr/local/share/man/man1/color.1

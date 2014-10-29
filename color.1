@@ -1,0 +1,68 @@
+.TH COLOR "1" "October 2014" "color 1.0" "User Commands"
+.SH NAME
+color \- colorize text from the standard input
+.SH SYNOPSIS
+.B color
+[\fIOPTION\fR]... \fISTYLE\fR...
+.SH DESCRIPTION
+.PP
+Colorize text from the standard input using each STYLE specified.
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show this help message and exit
+.TP
+\fB\-h\fR, \fB\-\-version\fR
+show version information and exit
+.SH INPUT FORMAT
+Parameters can be specified in the input text with '{index}' where index
+is a positive number less than the number of styles passed in to color.
+Parameter indices can be repeated. To reset the current style use '{r}'.
+A reset is automatically applied before each parameter occurence in the
+input text. The last '{r}' in the can be omitted as a reset is done at
+the end of the input.
+.SH STYLE FORMAT
+.P
+foreground:background+attributes
+.fi
+.P
+Foreground and background values:
+.br
+black, red, green, yellow, blue, magenta, cyan, white.
+.P
+Attribute values:
+.br
+b - bold, d - dim, i - italic, u - underline, b - blink, r - reverse,
+.br
+f - fast blink, h - hidden, c - crossed out
+.fi
+.SH EXAMPLES
+.TP
+.B echo "{0}green fg" | color green
+{0} is used to reference the first style argument of color.
+.TP
+.B echo "{0}blue bg{r} default bg" | color :blue
+{r} is used to reset all styles.
+.TP
+.B echo "{0}yellow fg{r} default fg {0}yellow fg again" | color yellow
+Parameters may be repeated in different parts of the input.
+.TP
+.B echo "{0}green fg red bg bold" | color green:red+b
+Print bold green text on red background.
+.TP
+.B echo "{0}underline{r}, {1}bold{r} and {2}reverse" | color +u +b +r
+Reference color arguments by their index.
+.TP
+.B echo "{0}blue fg red bg bold reverse" | color blue:red+br
+Multiple attributes can be specified (bold and reverse here).
+.SH AUTHOR
+Written by Adrian-George Bostan.
+.SH "REPORTING BUGS"
+For reporting bugs, getting help or just browsing the source code of the
+application visit: <https://github.com/adrg/color>
+.SH COPYRIGHT
+Copyright \(co 2014 Adrian-George Bostan <adi@fractor.ro>.
+License MIT: <http://opensource.org/licenses/MIT>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
