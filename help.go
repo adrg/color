@@ -12,8 +12,8 @@ Input format:
   is a positive number less than the number of styles passed in to color.
   Parameter indices can be repeated. To reset the current style use '{r}'.
   A reset is automatically applied before each parameter occurence in the
-  input text. A style reset is applied at the end of the input so the last
-  '{r}' can be omitted.
+  input text. The last '{r}' in the can be omitted as a reset is done at
+  the end of the input.
 
 Style format: foreground:background+attributes
   Foreground and background can have the following values: black, red,
