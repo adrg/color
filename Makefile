@@ -1,3 +1,5 @@
+MAN_DIR = /usr/local/share/man/man1
+
 all: build
 
 build: get_deps color.go help.go
@@ -11,7 +13,7 @@ get_deps:
 
 install:
 	cp -f color /usr/local/bin/color
-	cp -f color.1 /usr/local/share/man/man1/color.1
+	mkdir -p $(MAN_DIR) && cp -f color.1 $(MAN_DIR)/color.1
 
 uninstall:
 	rm /usr/local/bin/color
