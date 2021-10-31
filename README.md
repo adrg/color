@@ -71,7 +71,15 @@ echo "{0}blue fg, red bg, bold, reverse" | color blue:red+br
 ````
 ![screenshot](https://raw.githubusercontent.com/adrg/adrg.github.io/master/assets/projects/color/screenshot.png)
 
+## Contributing
+
+Contributions in the form of pull requests, issues or just general feedback,
+are always welcome.  
+See [CONTRIBUTING.MD](CONTRIBUTING.md).
+
 ## License
+
 Copyright (c) 2014 Adrian-George Bostan.
 
-This project is licensed under the [MIT license](http://opensource.org/licenses/MIT). See LICENSE for more details.
+This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+See [LICENSE](LICENSE) for more details.
