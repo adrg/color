@@ -5,7 +5,7 @@ color
 Color is a small CLI application which provides the ability colorize text
 from the standard input.
 
-##Installation
+## Installation
 
 To build use:
 ```sh
