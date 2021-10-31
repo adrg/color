@@ -71,7 +71,8 @@ echo "{0}green fg, red bg, bold" | color green:red+b
 echo "{0}underline{r}, {1}bold{r} and {2}reverse" | color +u +b +r
 echo "{0}blue fg, red bg, bold, reverse" | color blue:red+br
 ````
-![screenshot](https://raw.githubusercontent.com/adrg/adrg.github.io/master/assets/projects/color/screenshot.png)
+
+<img alt="screenshot" src="https://raw.githubusercontent.com/adrg/adrg.github.io/master/assets/projects/color/screenshot.png" width="100%" />
 
 ## Contributing
 
