@@ -1,8 +1,10 @@
 color
 =====
-[![License: MIT](http://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![pkg.go.dev documentation](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/github.com/adrg/color)
+[![License: MIT](https://img.shields.io/github/license/adrg/splash)](http://opensource.org/licenses/MIT)
+[![Go Report Card](https://goreportcard.com/badge/github.com/adrg/color)](https://goreportcard.com/report/github.com/adrg/color)
 
-Color is a small CLI application which provides the ability colorize text
+Color is a small CLI application which provides the ability style text
 from the standard input.
 
 ## Installation

@@ -5,13 +5,13 @@ Try 'color --help' for more information.
 `
 
 const help = `Usage: color [-h] [-v] STYLE...
-Colorize text from the standard input using each STYLE specified.
+Stye text from the standard input using each STYLE specified.
 
 Input format:
   Parameters can be specified in the input text with '{index}' where index
   is a positive number less than the number of styles passed in to color.
   Parameter indices can be repeated. To reset the current style use '{r}'.
-  A reset is automatically applied before each parameter occurence in the
+  A reset is automatically applied before each parameter occurrence in the
   input text. The last '{r}' in the can be omitted as a reset is done at
   the end of the input.
 
