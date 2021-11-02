@@ -38,7 +38,7 @@ application visit: <https://github.com/adrg/color>
 `
 
 const version = `color 1.0
-Copyright (C) 2014 Adrian-George Bostan <adi@fractor.ro>
+Copyright (C) 2014 Adrian-George Bostan <adrg@epistack.com>
 License MIT: <http://opensource.org/licenses/MIT>.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
